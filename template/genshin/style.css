@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;500;700&display=swap');
 
 :root {
-    --amount: rgb(85, 85, 85);
-    --donator: rgb(85, 85, 85);
-    --text: #8b8b8b;
+    --amount: rgb(61, 61, 61);
+    --donator: rgb(60, 60, 60);
+    --text: #707070;
+    --textdonatur: rgb(#ff0d00);
+    --text2: rgb(#e2d8c4);
 }
 
 .container {
@@ -45,6 +47,22 @@
     font-size: 1.3rem;
     font-weight: 550;
     letter-spacing: 0.8px;
+    line-height: 120%;
+    overflow-wrap: break-word; 
+    color: var(--text);
+}
+
+.text2 {
+    position: relative;
+    max-width: 750px;
+    z-index: 3;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 550;
+    letter-spacing: 0.8px;
+    line-height: 120%;
+    overflow-wrap: break-word; 
+    color: var(--text2);
 }
 
 .amount {
@@ -53,10 +71,4 @@
 
 .donator {
     color: var(--donator);
-}
-
-.text {
-    line-height: 120%;
-    overflow-wrap: break-word; 
-    color: var(--text);
 }
